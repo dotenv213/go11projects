@@ -1,0 +1,23 @@
+# Version control
+.git
+.gitignore
+
+*.exe
+*.exe~
+*.dll
+*.so
+
+# Dependency directories 
+vendor/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# IDE configs
+.vscode/
+.idea/
+
+# Logs
+*.log
