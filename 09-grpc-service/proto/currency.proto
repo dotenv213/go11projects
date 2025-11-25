@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package currency;
+
+option go_package = "./proto";
+
+service CurrencyConverter {
+  rpc GetExchangeRate (RateRequest) returns (RateResponse);
+}
+
+message RateRequest {
+  string from_currency = 1; 
+  string to_currency = 2;
+}
+
+message RateResponse {
+  float rate = 1;
+}
